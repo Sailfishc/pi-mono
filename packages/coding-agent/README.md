@@ -136,7 +136,7 @@ The editor can be temporarily replaced by other UI, like built-in `/settings` or
 | File reference | Type `@` to fuzzy-search project files |
 | Path completion | Tab to complete paths |
 | Multi-line | Shift+Enter (or Ctrl+Enter on Windows Terminal) |
-| Images | Ctrl+V to paste, or drag onto terminal |
+| Images | Ctrl+V to paste (Alt+V on Windows), or drag onto terminal |
 | Bash commands | `!command` runs and sends output to LLM, `!!command` runs without sending |
 
 Standard editing keybindings for delete word, undo, etc. See [docs/keybindings.md](docs/keybindings.md).
@@ -385,7 +385,7 @@ import { AuthStorage, createAgentSession, ModelRegistry, SessionManager } from "
 
 const { session } = await createAgentSession({
   sessionManager: SessionManager.inMemory(),
-  authStorage: new AuthStorage(),
+  authStorage: AuthStorage.create(),
   modelRegistry: new ModelRegistry(authStorage),
 });
 
