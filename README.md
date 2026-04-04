@@ -1,8 +1,12 @@
-# 🏖️ OSS Vacation
+<!-- OSS_WEEKEND_START -->
+# 🏖️ OSS Weekend
 
-**Issue tracker and PRs reopen March 2, 2026.**
+**Issue tracker reopens Monday, April 13, 2026.**
 
-All PRs will be auto-closed until then. Approved contributors can submit PRs after vacation without reapproval. For support, join [Discord](https://discord.com/invite/3cU7Bz4UPx).
+OSS weekend runs Thursday, April 2, 2026 through Monday, April 13, 2026. New issues and PRs from unapproved contributors are auto-closed during this time. Approved contributors can still open issues and PRs if something is genuinely urgent, but please keep that to pressing matters only. For support, join [Discord](https://discord.com/invite/3cU7Bz4UPx).
+
+> _Current focus: at the moment i'm deep in refactoring internals, and need to focus._
+<!-- OSS_WEEKEND_END -->
 
 ---
 
@@ -50,7 +54,7 @@ npm install          # Install all dependencies
 npm run build        # Build all packages
 npm run check        # Lint, format, and type check
 ./test.sh            # Run tests (skips LLM-dependent tests without API keys)
-./pi-test.sh         # Run pi from sources (must be run from repo root)
+./pi-test.sh         # Run pi from sources (can be run from any directory)
 ```
 
 > **Note:** `npm run check` requires `npm run build` to be run first. The web-ui package uses `tsc` which needs compiled `.d.ts` files from dependencies.
